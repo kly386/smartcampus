@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    int id;
+    char name[20];
+    char title[20];
+    char department[30];
+} Teacher;
+
+int main() {
+    Teacher teachers[5] = {
+        {1, "张三", "教授", "计算机科学与技术学院"},
+        {2, "李四", "副教授", "信息工程学院"},
+        {3, "王五", "讲师", "数学学院"},
+        {4, "赵六", "教授", "物理学院"},
+        {5, "钱七", "副教授", "化学化工学院"}
+    };
+
+    FILE* file = fopen("data/course_schedule/teachers.dat", "wb");
+    if (file) {
+        fwrite(teachers, sizeof(Teacher), 5, file);
+        fclose(file);
+        printf("teachers.dat 文件创建成功！\n");
+    } else {
+        printf("无法创建文件！\n");
+    }
+    return 0;
+}
+
+void verify_teacher_file() {
+    FILE* file = fopen("data/course_schedule/teachers.dat", "rb");
+    if (file) {
+        Teacher t;
+        while (fread(&t, sizeof(Teacher), 1, file) == 1) {
+            printf("ID:%d 姓名:%s 职称:%s 院系:%s\n", 
+                  t.id, t.name, t.title, t.department);
+        }
+        fclose(file);
+    }
+}

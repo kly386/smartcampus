@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ui\app.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\common.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\list.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dao\student_manage\student_dao.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\student_manage\student_ui.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\service\student_manage\student_service.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dao\class_manage\teacher_dao.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\service\class_manage\teacher_service.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\class_manage\teacher_ui.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\class_manage\main_ui.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\service\class_manage\classroom_service.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dao\class_manage\classroom_dao.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\class_manage\classroom_ui.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dao\class_manage\schedule_dao.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\service\class_manage\schedule_service.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\class_manage\schedule_ui.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\service\class_manage\course_service.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dao\class_manage\course_dao.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="data\class_manage\create_teachers.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\class_manage\course_ui.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\core\list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dao\student_manage\student_dao.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\service\student_manage\student_service.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ui\student_manage\student_ui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dao\class_manage\classroom_dao.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dao\class_manage\schedule_dao.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dao\class_manage\teacher_dao.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\service\class_manage\classroom_service.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\service\class_manage\schedule_service.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\service\class_manage\teacher_service.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ui\class_manage\classroom_ui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ui\class_manage\schedule_ui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ui\class_manage\teacher_ui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\course_schedule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ui\class_manage\main_ui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ui\class_manage\course_ui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\service\class_manage\course_service.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dao\class_manage\course_dao.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\student_manage\students.dat" />
+    <None Include="data\class_manage\classrooms.dat" />
+    <None Include="data\class_manage\courses.dat" />
+    <None Include="data\class_manage\schedules.dat" />
+    <None Include="data\class_manage\teachers.dat" />
+  </ItemGroup>
+</Project>

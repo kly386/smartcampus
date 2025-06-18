@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "../../include/dao/class_manage/course_dao.h"
+
+// 初始化课程数据文件
+void initialize_course_data() {
+    // 创建数据目录
+    mkdir("data");
+    mkdir("data/course_schedule");
+
+    FILE* file = fopen(COURSE_FILE, "rb");
+    if (file == NULL) {
+        file = fopen(COURSE_FILE, "wb");
+        if (file != NULL) {
+            // 初始化一些课程数据
+            Course courses[] = {
+                {1, "C语言编程", 3, 48, 1, 50},
+                {2, "数据结构", 4, 64, 2, 45}
+            };
+
+            for (int i = 0; i < sizeof(courses) / sizeof(courses[0]); i++) {
+                fwrite(&courses[i], sizeof(Course), 1, file);
+            }
+
+            fclose(file);
+        }
+    } else {
+        fclose(file);
+    }
+}
+
+int main() {
+    initialize_course_data();
+
+    // 其他代码...
+
+    return 0;
+}
