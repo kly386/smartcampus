@@ -6,6 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+// Thomas的测试注释
+
 void show_classroom_menu() {
     printf("\n===== 教室管理 =====\n");
     printf("1. 添加教室\n");
